@@ -10,4 +10,4 @@ class LoginPage:
         self.driver.get(self.url)
 
     def take_screenshot(self):
-        self.driver.save_screenshpt('../screenshots/test_login.png')
+        self.driver.save_screenshot('../screenshots/test_login.png')
