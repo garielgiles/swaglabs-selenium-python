@@ -16,3 +16,7 @@ def setup():
 def teardown():
     global driver
     close_browser(driver)
+
+
+def test_login():
+    page.go_to()
