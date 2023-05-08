@@ -12,10 +12,10 @@ class LoginPage:
     def take_screenshot(self):
         self.driver.save_screenshot('../screenshots/test_login.png')
 
-    def input_username(self):
+    def username_field(self):
         return self.driver.find_element(By.CSS_SELECTOR, "input[id='user-name']")
 
-    def input_password(self):
+    def password_field(self):
         return self.driver.find_element(By.CSS_SELECTOR, "input[id='password']")
 
     def input_login_button(self):

@@ -25,8 +25,8 @@ def teardown():
 def test_login():
     page.go_to()
 
-    page.input_username().send_keys(username)
-    page.input_password().send_keys(password)
+    page.username_field().send_keys(username)
+    page.password_field().send_keys(password)
 
     time.sleep(10)
 
