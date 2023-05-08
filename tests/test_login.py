@@ -1,3 +1,5 @@
+import time
+
 from pages.login_page import LoginPage
 from utils.selenium_utils import open_browser, close_browser
 
@@ -25,4 +27,6 @@ def test_login():
 
     page.input_username().send_keys(username)
     page.input_password().send_keys(password)
+
+    time.sleep(10)
 
