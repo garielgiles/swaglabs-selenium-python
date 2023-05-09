@@ -18,7 +18,7 @@ class LoginPage:
     def password_field(self):
         return self.driver.find_element(By.CSS_SELECTOR, "input[id='password']")
 
-    def input_login_button(self):
+    def login_button(self):
         return self.driver.find_element(By.CSS_SELECTOR, "input[id='login-button']")
 
     def div_epic_sadface_username_required(self):
@@ -29,3 +29,6 @@ class LoginPage:
 
     def button(self):
         return self.driver.find_element(By.CSS_SELECTOR, "button[class='error-button']")
+
+    def products_title(self):
+        return self.driver.find_element(By.CSS_SELECTOR, "span[class='title']")
