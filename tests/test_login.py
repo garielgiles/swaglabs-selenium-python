@@ -21,7 +21,7 @@ def teardown():
     close_browser(driver)
 
 
-def test_login():
+def test_login_successful():
     page.go_to()
 
     page.username_field().send_keys(username)
