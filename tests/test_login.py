@@ -33,3 +33,7 @@ def test_login_successful():
 
     time.sleep(10)
 
+
+def test_login_unsuccessful():
+    page.go_to()
+
