@@ -31,9 +31,15 @@ def test_login_successful():
 
     page.products_title().is_displayed()
 
-    time.sleep(10)
+    time.sleep(5)
 
 
 def test_login_unsuccessful():
     page.go_to()
 
+    page.username_field().send_keys("incorrect user")
+    page.password_field().send_keys(password)
+
+    page.login_button().click()
+
+    time.sleep(5)
