@@ -37,9 +37,11 @@ def test_login_successful():
 def test_login_unsuccessful():
     page.go_to()
 
-    page.username_field().send_keys("incorrect user")
+    page.username_field().send_keys("incorrect_user")
     page.password_field().send_keys(password)
 
     page.login_button().click()
+
+    page.username_field().clear()
 
     time.sleep(5)
