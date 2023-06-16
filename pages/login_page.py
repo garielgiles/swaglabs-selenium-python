@@ -24,12 +24,6 @@ class LoginPage:
     def div_epic_sadface_username_required(self):
         return self.driver.find_element(By.CSS_SELECTOR, "div[class$='error']")
 
-    def h3_error(self):
-        return self.driver.find_element(By.CSS_SELECTOR, "h3[data-test='error']")
-
-    def button(self):
-        return self.driver.find_element(By.CSS_SELECTOR, "button[class='error-button']")
-
     def products_title(self):
         return self.driver.find_element(By.CSS_SELECTOR, "span[class='title']")
 
