@@ -42,6 +42,8 @@ def test_login_unsuccessful():
 
     page.login_button().click()
 
+    page.error_box().is_displayed()
+
     page.username_field().clear()
 
     time.sleep(5)
