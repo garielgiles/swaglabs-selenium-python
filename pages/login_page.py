@@ -32,3 +32,9 @@ class LoginPage:
 
     def products_title(self):
         return self.driver.find_element(By.CSS_SELECTOR, "span[class='title']")
+
+    def error_box(self):
+        return self.driver.find_element(By.CSS_SELECTOR, "h3[data-test='error']")
+
+    def error_button(self):
+        return self.driver.find_element(By.CSS_SELECTOR, "button[class='error-button']")
